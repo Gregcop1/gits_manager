@@ -1,0 +1,3 @@
+HelloTheWorld:
+    pattern:    /hello-world
+    defaults:   { _controller: InouitGitsManagerBundle:GitsManager:index }

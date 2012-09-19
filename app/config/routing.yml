@@ -1,0 +1,9 @@
+InouitGitsManager:
+    pattern:  /hello-world
+    type: annotation
+    defaults: { _controller: InouitGitsManagerBundle:GitsManager:index }
+
+# Internal routing configuration to handle ESI
+#_internal:
+#    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#    prefix:   /_internal
