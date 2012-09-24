@@ -12,8 +12,10 @@ class GitsManagerController extends Controller
 {
     public function indexAction()
     {
-        $rep = new Directory('/home/gregory/www/gits_manager');
+        $directories = array(
+                            new Directory('/home/gregory/www/typo3lab/typo3conf/ext')
+                        );
 
-        return $this->render('InouitGitsManagerBundle:GitsManager:index.html.twig', array( 'rep' => $rep  ));
+        return $this->render('InouitGitsManagerBundle:GitsManager:index.html.twig', array( 'directories' => $directories  ));
     }
 }
